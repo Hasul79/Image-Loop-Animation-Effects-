@@ -11,8 +11,17 @@
     <section>
         <h2>JS Animation</h2>
         <div class="banner">
-            <div class="blocks"></div>
+            <div class="carts"></div>
         </div>
     </section>
+    <script>
+        const banner = document.getElementByClassName('banner')[0];
+        const cart = document.getElementByClassName('carts');
+        
+        for (let i = 1; i < 400; i++){
+            banner.innerHTML += "<div class='carts'></div>";
+            carts[i].style.animationDelay = `${i * 0.05}s`;
+        }
+    </script>
 </body>
 </html>
